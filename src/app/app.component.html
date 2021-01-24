@@ -5,6 +5,6 @@
       <option *ngFor='let city of cities' value="{{city.cityName}}">{{city.cityName}}</option>
   </select>
   <div *ngIf='city'>
-      <app-radios [radios]='city'></app-radios>
+      <app-radios [radios]='city.radios'></app-radios>
   </div>
 </div>
